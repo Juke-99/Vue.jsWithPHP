@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Merchandise Control</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+
+  <body>
+    <h3>Merchandise Control</h3>
+
+    <div id="list_box">
+      <ul>
+        <li v-for="list in lists">
+          <a :href="list.href">{{ list.text }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/irui.js"></script>
+  </body>
+</html>
